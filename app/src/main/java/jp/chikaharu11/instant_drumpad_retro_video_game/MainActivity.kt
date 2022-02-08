@@ -803,14 +803,20 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
             arrayOf(
                 "演奏モード⇔パッド音の変更",
                 "メトロノーム・ループ",
-                "サンプル・ループ",
+                "8bit [ Beats ]",
+                "8bit [ Loops ]",
+                "GB DS [ Beats ]",
+                "GB [ Loops ]",
                 "外部サウンド・ループ",
                 "ドラムパッドをリセット"
             ) } else {
             arrayOf(
                 "Play mode ↔ Change pad sounds",
                 "Metronome Loops",
-                "Sample Loops",
+                "8bit [ Beats ]",
+                "8bit [ Loops ]",
+                "GB DS [ Beats ]",
+                "GB [ Loops ]",
                 "External sound Loops",
                 "Reset drum pads"
             )
@@ -845,24 +851,59 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     switch1 = 2
                     buttonA = 16
                     buttonB = 2
-                    soundListView.adapter = nCustomAdapter
-                    nCustomAdapter.notifyDataSetChanged()
+                    soundListView.adapter = aCustomAdapter
+                    aCustomAdapter.notifyDataSetChanged()
                     soundListView.visibility = View.VISIBLE
                     gridView2.visibility = View.INVISIBLE
                 }
-                "サンプル・ループ" -> {
+                "8bit [ Beats ]" -> {
                     lmp.stop()
                     menuSwitch = true
                     invalidateOptionsMenu()
                     switch1 = 2
                     buttonA = 16
                     buttonB = 2
-                    soundListView.adapter = oCustomAdapter
-                    oCustomAdapter.notifyDataSetChanged()
+                    soundListView.adapter = bCustomAdapter
+                    bCustomAdapter.notifyDataSetChanged()
                     soundListView.visibility = View.VISIBLE
                     gridView2.visibility = View.INVISIBLE
                 }
-
+                "8bit [ Loops ]" -> {
+                    lmp.stop()
+                    menuSwitch = true
+                    invalidateOptionsMenu()
+                    switch1 = 2
+                    buttonA = 16
+                    buttonB = 2
+                    soundListView.adapter = cCustomAdapter
+                    cCustomAdapter.notifyDataSetChanged()
+                    soundListView.visibility = View.VISIBLE
+                    gridView2.visibility = View.INVISIBLE
+                }
+                "GB DS [ Beats ]" -> {
+                    lmp.stop()
+                    menuSwitch = true
+                    invalidateOptionsMenu()
+                    switch1 = 2
+                    buttonA = 16
+                    buttonB = 2
+                    soundListView.adapter = dCustomAdapter
+                    dCustomAdapter.notifyDataSetChanged()
+                    soundListView.visibility = View.VISIBLE
+                    gridView2.visibility = View.INVISIBLE
+                }
+                "GB [ Loops ]" -> {
+                    lmp.stop()
+                    menuSwitch = true
+                    invalidateOptionsMenu()
+                    switch1 = 2
+                    buttonA = 16
+                    buttonB = 2
+                    soundListView.adapter = eCustomAdapter
+                    eCustomAdapter.notifyDataSetChanged()
+                    soundListView.visibility = View.VISIBLE
+                    gridView2.visibility = View.INVISIBLE
+                }
                 "外部サウンド・ループ" -> {
                     lmp.stop()
                     menuSwitch = true
@@ -1011,8 +1052,8 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     switch1 = 2
                     buttonA = 16
                     buttonB = 2
-                    soundListView.adapter = nCustomAdapter
-                    nCustomAdapter.notifyDataSetChanged()
+                    soundListView.adapter = aCustomAdapter
+                    aCustomAdapter.notifyDataSetChanged()
                     soundListView.visibility = View.VISIBLE
                     gridView2.visibility = View.INVISIBLE
                 }

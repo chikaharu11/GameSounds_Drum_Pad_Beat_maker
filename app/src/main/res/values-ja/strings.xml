@@ -48,10 +48,10 @@
 
     <string-array name="spinnerItems">
         <item>FX</item>
-        <item>8bit [Beats]</item>
-        <item>8bit [Loops]</item>
-        <item>GB DS [Beats]</item>
-        <item>GB [Loops]</item>
+        <item>8bit [ Beats ]</item>
+        <item>8bit [ Loops ]</item>
+        <item>GB DS [ Beats ]</item>
+        <item>GB [ Loops ]</item>
         <item>内部サウンド</item>
         <item>外部サウンド</item>
     </string-array>
