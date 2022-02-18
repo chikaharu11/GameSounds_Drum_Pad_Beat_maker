@@ -248,26 +248,26 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
 
         val tuning = if (locale == Locale.JAPAN) {
             arrayOf(
-                "サウンドの設定をリセット",
                 "サウンドの調整",
+                "サウンドの設定をリセット",
                 "バナー広告を非表示にする",
                 "終了する",
-                "5x3","5x2",
-                "4x3","4x2",
-                "3x3","3x2",
+                "5x3","5x2","5x1",
+                "4x3","4x2","4x1",
+                "3x3","3x2","3x1",
                 "2x2","2x1"
             ) } else {
             arrayOf(
-                "Reset the sound settings",
                 "Adjusting Sounds",
+                "Reset the sound settings",
                 "Hide banner Ads",
                 "EXIT",
-                "5x3","5x2",
-                "4x3","4x2",
-                "3x3","3x2",
+                "5x3","5x2","5x1",
+                "4x3","4x2","4x1",
+                "3x3","3x2","3x1",
                 "2x2","2x1"
             )
-            }
+        }
         val adapter = ArrayAdapter(this, R.layout.custom_spinner_dropdown, tuning)
         val gridView: GridView = findViewById(R.id.grid_view)
         gridView.adapter = adapter
@@ -536,6 +536,19 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     binding.textView13.visibility = View.VISIBLE
                     binding.textView14.visibility = View.VISIBLE
                     binding.textView15.visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view2).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view5).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view3).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view6).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view7).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view8).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view9).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view10).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view11).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view12).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view13).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view14).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view15).visibility = View.VISIBLE
                     binding.gridView.visibility = View.INVISIBLE
                 }
                 "4x3" -> {
@@ -578,6 +591,19 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     binding.textView13.visibility = View.GONE
                     binding.textView14.visibility = View.GONE
                     binding.textView15.visibility = View.GONE
+                    findViewById<View>(R.id.include_view2).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view5).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view3).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view6).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view7).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view8).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view9).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view10).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view11).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view12).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view13).visibility = View.GONE
+                    findViewById<View>(R.id.include_view14).visibility = View.GONE
+                    findViewById<View>(R.id.include_view15).visibility = View.GONE
                     binding.gridView.visibility = View.INVISIBLE
                 }
                 "3x3" -> {
@@ -620,6 +646,19 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     binding.textView13.visibility = View.GONE
                     binding.textView14.visibility = View.GONE
                     binding.textView15.visibility = View.GONE
+                    findViewById<View>(R.id.include_view2).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view5).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view3).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view6).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view7).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view8).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view9).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view10).visibility = View.GONE
+                    findViewById<View>(R.id.include_view11).visibility = View.GONE
+                    findViewById<View>(R.id.include_view12).visibility = View.GONE
+                    findViewById<View>(R.id.include_view13).visibility = View.GONE
+                    findViewById<View>(R.id.include_view14).visibility = View.GONE
+                    findViewById<View>(R.id.include_view15).visibility = View.GONE
                     binding.gridView.visibility = View.INVISIBLE
                 }
                 "5x2" -> {
@@ -662,6 +701,19 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     binding.textView9.visibility = View.GONE
                     binding.textView12.visibility = View.GONE
                     binding.textView15.visibility = View.GONE
+                    findViewById<View>(R.id.include_view2).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view5).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view7).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view8).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view10).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view11).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view13).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view14).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view3).visibility = View.GONE
+                    findViewById<View>(R.id.include_view6).visibility = View.GONE
+                    findViewById<View>(R.id.include_view9).visibility = View.GONE
+                    findViewById<View>(R.id.include_view12).visibility = View.GONE
+                    findViewById<View>(R.id.include_view15).visibility = View.GONE
                     binding.gridView.visibility = View.INVISIBLE
                 }
                 "4x2" -> {
@@ -704,6 +756,19 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     binding.textView13.visibility = View.GONE
                     binding.textView14.visibility = View.GONE
                     binding.textView15.visibility = View.GONE
+                    findViewById<View>(R.id.include_view2).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view5).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view7).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view8).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view10).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view11).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view3).visibility = View.GONE
+                    findViewById<View>(R.id.include_view6).visibility = View.GONE
+                    findViewById<View>(R.id.include_view9).visibility = View.GONE
+                    findViewById<View>(R.id.include_view12).visibility = View.GONE
+                    findViewById<View>(R.id.include_view13).visibility = View.GONE
+                    findViewById<View>(R.id.include_view14).visibility = View.GONE
+                    findViewById<View>(R.id.include_view15).visibility = View.GONE
                     binding.gridView.visibility = View.INVISIBLE
                 }
                 "3x2" -> {
@@ -746,6 +811,19 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     binding.textView13.visibility = View.GONE
                     binding.textView14.visibility = View.GONE
                     binding.textView15.visibility = View.GONE
+                    findViewById<View>(R.id.include_view2).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view5).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view7).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view8).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view3).visibility = View.GONE
+                    findViewById<View>(R.id.include_view6).visibility = View.GONE
+                    findViewById<View>(R.id.include_view9).visibility = View.GONE
+                    findViewById<View>(R.id.include_view10).visibility = View.GONE
+                    findViewById<View>(R.id.include_view11).visibility = View.GONE
+                    findViewById<View>(R.id.include_view12).visibility = View.GONE
+                    findViewById<View>(R.id.include_view13).visibility = View.GONE
+                    findViewById<View>(R.id.include_view14).visibility = View.GONE
+                    findViewById<View>(R.id.include_view15).visibility = View.GONE
                     binding.gridView.visibility = View.INVISIBLE
                 }
                 "2x2" -> {
@@ -788,6 +866,19 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     binding.textView13.visibility = View.GONE
                     binding.textView14.visibility = View.GONE
                     binding.textView15.visibility = View.GONE
+                    findViewById<View>(R.id.include_view2).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view5).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view3).visibility = View.GONE
+                    findViewById<View>(R.id.include_view6).visibility = View.GONE
+                    findViewById<View>(R.id.include_view7).visibility = View.GONE
+                    findViewById<View>(R.id.include_view8).visibility = View.GONE
+                    findViewById<View>(R.id.include_view9).visibility = View.GONE
+                    findViewById<View>(R.id.include_view10).visibility = View.GONE
+                    findViewById<View>(R.id.include_view11).visibility = View.GONE
+                    findViewById<View>(R.id.include_view12).visibility = View.GONE
+                    findViewById<View>(R.id.include_view13).visibility = View.GONE
+                    findViewById<View>(R.id.include_view14).visibility = View.GONE
+                    findViewById<View>(R.id.include_view15).visibility = View.GONE
                     binding.gridView.visibility = View.INVISIBLE
                 }
                 "2x1" -> {
@@ -830,6 +921,184 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     binding.textView13.visibility = View.GONE
                     binding.textView14.visibility = View.GONE
                     binding.textView15.visibility = View.GONE
+                    findViewById<View>(R.id.include_view2).visibility = View.GONE
+                    findViewById<View>(R.id.include_view3).visibility = View.GONE
+                    findViewById<View>(R.id.include_view5).visibility = View.GONE
+                    findViewById<View>(R.id.include_view6).visibility = View.GONE
+                    findViewById<View>(R.id.include_view7).visibility = View.GONE
+                    findViewById<View>(R.id.include_view8).visibility = View.GONE
+                    findViewById<View>(R.id.include_view9).visibility = View.GONE
+                    findViewById<View>(R.id.include_view10).visibility = View.GONE
+                    findViewById<View>(R.id.include_view11).visibility = View.GONE
+                    findViewById<View>(R.id.include_view12).visibility = View.GONE
+                    findViewById<View>(R.id.include_view13).visibility = View.GONE
+                    findViewById<View>(R.id.include_view14).visibility = View.GONE
+                    findViewById<View>(R.id.include_view15).visibility = View.GONE
+                    binding.gridView.visibility = View.INVISIBLE
+                }
+                "5x1" -> {
+                    binding.imageView7.visibility = View.VISIBLE
+                    binding.imageView10.visibility = View.VISIBLE
+                    binding.imageView13.visibility = View.VISIBLE
+                    binding.imageView2.visibility = View.GONE
+                    binding.imageView3.visibility = View.GONE
+                    binding.imageView5.visibility = View.GONE
+                    binding.imageView6.visibility = View.GONE
+                    binding.imageView8.visibility = View.GONE
+                    binding.imageView9.visibility = View.GONE
+                    binding.imageView11.visibility = View.GONE
+                    binding.imageView12.visibility = View.GONE
+                    binding.imageView14.visibility = View.GONE
+                    binding.imageView15.visibility = View.GONE
+                    binding.backgroundView7.visibility = View.VISIBLE
+                    binding.backgroundView10.visibility = View.VISIBLE
+                    binding.backgroundView13.visibility = View.VISIBLE
+                    binding.backgroundView2.visibility = View.GONE
+                    binding.backgroundView3.visibility = View.GONE
+                    binding.backgroundView5.visibility = View.GONE
+                    binding.backgroundView6.visibility = View.GONE
+                    binding.backgroundView8.visibility = View.GONE
+                    binding.backgroundView9.visibility = View.GONE
+                    binding.backgroundView11.visibility = View.GONE
+                    binding.backgroundView12.visibility = View.GONE
+                    binding.backgroundView14.visibility = View.GONE
+                    binding.backgroundView15.visibility = View.GONE
+                    binding.textView7.visibility = View.VISIBLE
+                    binding.textView10.visibility = View.VISIBLE
+                    binding.textView13.visibility = View.VISIBLE
+                    binding.textView2.visibility = View.GONE
+                    binding.textView3.visibility = View.GONE
+                    binding.textView5.visibility = View.GONE
+                    binding.textView6.visibility = View.GONE
+                    binding.textView8.visibility = View.GONE
+                    binding.textView9.visibility = View.GONE
+                    binding.textView11.visibility = View.GONE
+                    binding.textView12.visibility = View.GONE
+                    binding.textView14.visibility = View.GONE
+                    binding.textView15.visibility = View.GONE
+                    findViewById<View>(R.id.include_view7).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view10).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view13).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view2).visibility = View.GONE
+                    findViewById<View>(R.id.include_view3).visibility = View.GONE
+                    findViewById<View>(R.id.include_view5).visibility = View.GONE
+                    findViewById<View>(R.id.include_view6).visibility = View.GONE
+                    findViewById<View>(R.id.include_view8).visibility = View.GONE
+                    findViewById<View>(R.id.include_view9).visibility = View.GONE
+                    findViewById<View>(R.id.include_view11).visibility = View.GONE
+                    findViewById<View>(R.id.include_view12).visibility = View.GONE
+                    findViewById<View>(R.id.include_view14).visibility = View.GONE
+                    findViewById<View>(R.id.include_view15).visibility = View.GONE
+                    binding.gridView.visibility = View.INVISIBLE
+                }
+                "4x1" -> {
+                    binding.imageView7.visibility = View.VISIBLE
+                    binding.imageView10.visibility = View.VISIBLE
+                    binding.imageView2.visibility = View.GONE
+                    binding.imageView3.visibility = View.GONE
+                    binding.imageView5.visibility = View.GONE
+                    binding.imageView6.visibility = View.GONE
+                    binding.imageView8.visibility = View.GONE
+                    binding.imageView9.visibility = View.GONE
+                    binding.imageView11.visibility = View.GONE
+                    binding.imageView12.visibility = View.GONE
+                    binding.imageView13.visibility = View.GONE
+                    binding.imageView14.visibility = View.GONE
+                    binding.imageView15.visibility = View.GONE
+                    binding.backgroundView7.visibility = View.VISIBLE
+                    binding.backgroundView10.visibility = View.VISIBLE
+                    binding.backgroundView2.visibility = View.GONE
+                    binding.backgroundView3.visibility = View.GONE
+                    binding.backgroundView5.visibility = View.GONE
+                    binding.backgroundView6.visibility = View.GONE
+                    binding.backgroundView8.visibility = View.GONE
+                    binding.backgroundView9.visibility = View.GONE
+                    binding.backgroundView11.visibility = View.GONE
+                    binding.backgroundView12.visibility = View.GONE
+                    binding.backgroundView13.visibility = View.GONE
+                    binding.backgroundView14.visibility = View.GONE
+                    binding.backgroundView15.visibility = View.GONE
+                    binding.textView7.visibility = View.VISIBLE
+                    binding.textView10.visibility = View.VISIBLE
+                    binding.textView2.visibility = View.GONE
+                    binding.textView3.visibility = View.GONE
+                    binding.textView5.visibility = View.GONE
+                    binding.textView6.visibility = View.GONE
+                    binding.textView8.visibility = View.GONE
+                    binding.textView9.visibility = View.GONE
+                    binding.textView11.visibility = View.GONE
+                    binding.textView12.visibility = View.GONE
+                    binding.textView13.visibility = View.GONE
+                    binding.textView14.visibility = View.GONE
+                    binding.textView15.visibility = View.GONE
+                    findViewById<View>(R.id.include_view7).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view10).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view2).visibility = View.GONE
+                    findViewById<View>(R.id.include_view3).visibility = View.GONE
+                    findViewById<View>(R.id.include_view5).visibility = View.GONE
+                    findViewById<View>(R.id.include_view6).visibility = View.GONE
+                    findViewById<View>(R.id.include_view8).visibility = View.GONE
+                    findViewById<View>(R.id.include_view9).visibility = View.GONE
+                    findViewById<View>(R.id.include_view11).visibility = View.GONE
+                    findViewById<View>(R.id.include_view12).visibility = View.GONE
+                    findViewById<View>(R.id.include_view13).visibility = View.GONE
+                    findViewById<View>(R.id.include_view14).visibility = View.GONE
+                    findViewById<View>(R.id.include_view15).visibility = View.GONE
+                    binding.gridView.visibility = View.INVISIBLE
+                }
+                "3x1" -> {
+                    binding.imageView7.visibility = View.VISIBLE
+                    binding.imageView2.visibility = View.GONE
+                    binding.imageView3.visibility = View.GONE
+                    binding.imageView5.visibility = View.GONE
+                    binding.imageView6.visibility = View.GONE
+                    binding.imageView8.visibility = View.GONE
+                    binding.imageView9.visibility = View.GONE
+                    binding.imageView10.visibility = View.GONE
+                    binding.imageView11.visibility = View.GONE
+                    binding.imageView12.visibility = View.GONE
+                    binding.imageView13.visibility = View.GONE
+                    binding.imageView14.visibility = View.GONE
+                    binding.imageView15.visibility = View.GONE
+                    binding.backgroundView7.visibility = View.VISIBLE
+                    binding.backgroundView2.visibility = View.GONE
+                    binding.backgroundView3.visibility = View.GONE
+                    binding.backgroundView5.visibility = View.GONE
+                    binding.backgroundView6.visibility = View.GONE
+                    binding.backgroundView8.visibility = View.GONE
+                    binding.backgroundView9.visibility = View.GONE
+                    binding.backgroundView10.visibility = View.GONE
+                    binding.backgroundView11.visibility = View.GONE
+                    binding.backgroundView12.visibility = View.GONE
+                    binding.backgroundView13.visibility = View.GONE
+                    binding.backgroundView14.visibility = View.GONE
+                    binding.backgroundView15.visibility = View.GONE
+                    binding.textView7.visibility = View.VISIBLE
+                    binding.textView2.visibility = View.GONE
+                    binding.textView3.visibility = View.GONE
+                    binding.textView5.visibility = View.GONE
+                    binding.textView6.visibility = View.GONE
+                    binding.textView8.visibility = View.GONE
+                    binding.textView9.visibility = View.GONE
+                    binding.textView10.visibility = View.GONE
+                    binding.textView11.visibility = View.GONE
+                    binding.textView12.visibility = View.GONE
+                    binding.textView13.visibility = View.GONE
+                    binding.textView14.visibility = View.GONE
+                    binding.textView15.visibility = View.GONE
+                    findViewById<View>(R.id.include_view7).visibility = View.VISIBLE
+                    findViewById<View>(R.id.include_view2).visibility = View.GONE
+                    findViewById<View>(R.id.include_view3).visibility = View.GONE
+                    findViewById<View>(R.id.include_view5).visibility = View.GONE
+                    findViewById<View>(R.id.include_view6).visibility = View.GONE
+                    findViewById<View>(R.id.include_view8).visibility = View.GONE
+                    findViewById<View>(R.id.include_view9).visibility = View.GONE
+                    findViewById<View>(R.id.include_view10).visibility = View.GONE
+                    findViewById<View>(R.id.include_view11).visibility = View.GONE
+                    findViewById<View>(R.id.include_view12).visibility = View.GONE
+                    findViewById<View>(R.id.include_view13).visibility = View.GONE
+                    findViewById<View>(R.id.include_view14).visibility = View.GONE
+                    findViewById<View>(R.id.include_view15).visibility = View.GONE
                     binding.gridView.visibility = View.INVISIBLE
                 }
             }
@@ -837,48 +1106,81 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
 
         val choose = if (locale == Locale.JAPAN) {
             arrayOf(
-                "ドラムパッドをリセット",
-                "演奏モード⇔パッド音の変更",
+                "パッド音の変更",
                 "メトロノーム・ループ",
                 "8bit [ Beats ]",
                 "8bit [ Loops ]",
                 "GB DS [ Beats ]",
                 "GB [ Loops ]",
-                "外部サウンド・ループ"
+                "外部サウンド・ループ",
+                "ドラムパッドをリセット"
             ) } else {
             arrayOf(
-                "Reset drum pads",
-                "Play mode ↔ Change pad sounds",
+                "Change Pad Sounds",
                 "Metronome Loops",
                 "8bit [ Beats ]",
                 "8bit [ Loops ]",
                 "GB DS [ Beats ]",
                 "GB [ Loops ]",
-                "External sound Loops"
+                "External sound Loops",
+                "Reset drum pads",
+            )
+        }
+        val choose2 = if (locale == Locale.JAPAN) {
+            arrayOf(
+                "プレイモードに変更",
+                "メトロノーム・ループ",
+                "サンプル・ループ",
+                "外部サウンド・ループ",
+                "ドラムパッドをリセット"
+            ) } else {
+            arrayOf(
+                "Change to Play Mode",
+                "Metronome Loops",
+                "Sample Loops",
+                "External sound Loops",
+                "Reset drum pads"
             )
         }
         val adapter2 = ArrayAdapter(this, R.layout.custom_spinner_dropdown, choose)
+        val adapter2a = ArrayAdapter(this, R.layout.custom_spinner_dropdown, choose2)
         val gridView2: GridView = findViewById(R.id.grid_view_choose)
         val soundListView = findViewById<ListView>(R.id.list_view)
         gridView2.adapter = adapter2
 
         gridView2.setOnItemClickListener { adapterView, _, position, _ ->
             when (adapterView.getItemAtPosition(position)) {
-                "演奏モード⇔パッド音の変更" -> {
-                    when (paste) {
-                        0 -> {
-                            paste = 1
-                            invalidateOptionsMenu()
-                            Toast.makeText(applicationContext, R.string.change, Toast.LENGTH_LONG).show()
-                            gridView2.visibility = View.INVISIBLE
-                        }
-                        1 -> {
-                            paste = 0
-                            invalidateOptionsMenu()
-                            Toast.makeText(applicationContext, R.string.change2, Toast.LENGTH_LONG).show()
-                            gridView2.visibility = View.INVISIBLE
-                        }
-                    }
+                "パッド音の変更" -> {
+                    paste = 1
+                    invalidateOptionsMenu()
+                    Toast.makeText(applicationContext, R.string.change, Toast.LENGTH_LONG).show()
+                    gridView2.visibility = View.INVISIBLE
+                    gridView2.adapter = adapter2a
+                    adapter2a.notifyDataSetChanged()
+                }
+                "プレイモードに変更" -> {
+                    paste = 0
+                    invalidateOptionsMenu()
+                    Toast.makeText(applicationContext, R.string.change2, Toast.LENGTH_LONG).show()
+                    gridView2.visibility = View.INVISIBLE
+                    gridView2.adapter = adapter2
+                    adapter2.notifyDataSetChanged()
+                }
+                "Change Pad Sounds" -> {
+                    paste = 1
+                    invalidateOptionsMenu()
+                    Toast.makeText(applicationContext, R.string.change, Toast.LENGTH_LONG).show()
+                    gridView2.visibility = View.INVISIBLE
+                    gridView2.adapter = adapter2a
+                    adapter2a.notifyDataSetChanged()
+                }
+                "Change to Play Mode" -> {
+                    paste = 0
+                    invalidateOptionsMenu()
+                    Toast.makeText(applicationContext, R.string.change2, Toast.LENGTH_LONG).show()
+                    gridView2.visibility = View.INVISIBLE
+                    gridView2.adapter = adapter2
+                    adapter2.notifyDataSetChanged()
                 }
                 "メトロノーム・ループ" -> {
                     lmp.stop()
