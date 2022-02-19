@@ -222,7 +222,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                 binding.textView13.text = padText13
                 binding.textView14.text = padText14
                 binding.textView15.text = padText15
-                findViewById<TextView>(R.id.padText0).text = actionTitle
+                findViewById<TextView>(R.id.padText0).text = "loop"
         findViewById<View>(R.id.include_view).findViewById<TextView>(R.id.padText).text = padText1
         findViewById<View>(R.id.include_view2).findViewById<TextView>(R.id.padText).text = padText2
         findViewById<View>(R.id.include_view3).findViewById<TextView>(R.id.padText).text = padText3
@@ -311,7 +311,6 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     soundPoolTempo14 = 1.0f
                     soundPoolVolume15 = 0.5f
                     soundPoolTempo15 = 1.0f
-                    findViewById<TextView>(R.id.padText0).text = actionTitle
                     findViewById<View>(R.id.include_view).findViewById<TextView>(
                         R.id.padText).text = padText1
                     findViewById<View>(R.id.include_view2).findViewById<TextView>(
@@ -421,7 +420,6 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
                     soundPoolTempo14 = 1.0f
                     soundPoolVolume15 = 0.5f
                     soundPoolTempo15 = 1.0f
-                    findViewById<TextView>(R.id.padText0).text = actionTitle
                     findViewById<View>(R.id.include_view).findViewById<TextView>(
                         R.id.padText).text = padText1
                     findViewById<View>(R.id.include_view2).findViewById<TextView>(
@@ -4009,6 +4007,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         if (mRewardedAd != null) {
             mRewardedAd?.show(this) { rewardItem ->
                 binding.adView.visibility = View.GONE
+                binding.bottomSpace.visibility = View.GONE
                 binding.gridView.visibility = View.INVISIBLE
                 adCheck = 1
                 stickyImmersiveMode()
@@ -5022,6 +5021,7 @@ class MainActivity : AppCompatActivity(), CustomAdapterListener {
         adCheck = savedInstanceState.getInt("DATA")
         if ( adCheck == 1) {
             binding.adView.visibility = View.GONE
+            binding.bottomSpace.visibility = View.GONE
         }
     }
 }
